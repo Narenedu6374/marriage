@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marriage</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6b5bd7974e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'hero-pattern': "url('./assets/hero-bg.jpg')",
+              //  'footer-texture': "url('/img/footer-texture.png')",
+            },
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      }
+    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="flex justify-around md:justify-center items-center">
+        <h1 class="text-2xl md:text-4xl font-bold md:py-5 tracking-widest">
+          Ganesh
+          <span class="text-3xl md:text-5xl text-teal-800">&</span> Jayanthi
+        </h1>
+        <div class="md:hidden pt-5">
+          <i class="fa-solid fa-bars" class="pt-20" onclick="showSideBar()"></i>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="hidden md:flex justify-center items-center mb-3">
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/index.html" class="cursor-pointer">Home</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/wedding-party.html">Wedding Party</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/Schedule.html">Schedule</a>
+          </li>
+          <!-- <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="#">Travel</a>
+          </li> -->
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/gallery.html">gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile -->
+      <nav id="sidebar">
+        <ul class="md:hidden mb-3">
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/index.html" class="cursor-pointer">Home</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/wedding-party.html">Wedding Party</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/Schedule.html">Schedule</a>
+          </li>
+          <!-- <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="#">Travel</a>
+          </li> -->
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/gallery.html">gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- gallery
+     -->
+    <div class="bg-gray-200 mb-20 pb-10">
+      <div class="pt-10 text-center">
+        <p class="text-center w-4/6 mx-auto text-sm">
+          A few snaps taken of us over the years...
+        </p>
+        <div class="flex justify-center p-5">
+          <div class="w-1/2">
+            <img src="./assets/men1.jpg" alt="" class="w-3/3 mx-auto" />
+          </div>
+          <div class="w-1/2 flex flex-col">
+            <div class="w-3/3 px-2 py-2">
+              <img src="./assets/men2.jpg" alt="" class="w-fit h-auto" />
+            </div>
+            <div class="w-3/3 px-2 py-2">
+              <img src="./assets/women1.jpg" alt="" class="w-fit h-auto" />
+            </div>
+            <div class="w-3/3 px-2 py-2">
+              <img src="./assets/women2.jpg" alt="" class="w-fit h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="my-5 text-center">
+        <a href="#">&copy; 2024 Narayanan, inc. All rights reserved. </a>
+      </div>
+    </footer>
+  </body>
+</html>

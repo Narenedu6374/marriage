@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marriage</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6b5bd7974e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'hero-pattern': "url('./assets/hero-bg.jpg')",
+              //  'footer-texture': "url('/img/footer-texture.png')",
+            },
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      }
+    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="flex justify-around md:justify-center items-center">
+        <h1 class="text-2xl md:text-4xl font-bold md:py-5 tracking-widest">
+          Ganesh
+          <span class="text-3xl md:text-5xl text-teal-800">&</span> Jayanthi
+        </h1>
+        <div class="md:hidden pt-5">
+          <i class="fa-solid fa-bars" class="pt-20" onclick="showSideBar()"></i>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="hidden md:flex justify-center items-center mb-3">
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/index.html" class="cursor-pointer">Home</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/wedding-party.html">Wedding Party</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/Schedule.html">Schedule</a>
+          </li>
+          <!-- <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="#">Travel</a>
+          </li> -->
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/gallery.html">gallery</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile -->
+      <nav id="sidebar">
+        <ul class="md:hidden mb-3">
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/index.html" class="cursor-pointer">Home</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/wedding-party.html">Wedding Party</a>
+          </li>
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/Schedule.html">Schedule</a>
+          </li>
+          <!-- <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="#">Travel</a>
+          </li> -->
+          <li
+            class="cursor-pointer style-none mx-5 font-semibold tracking-wider hover:border-b-2 hover:border-teal-800 transition duration-900 delay-75 ease-linear capitalize w-fit"
+          >
+            <a href="/gallery.html">gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- party -->
+    <div class="bg-gray-200 mb-20 pb-10">
+      <div class="pt-10">
+        <p class="text-center text-sm">
+          Meet our family and friends who are walking down the with us.
+        </p>
+        <div class="flex justify-center mx-auto px-0 md:px-20 xl:px-64 mt-16">
+          <div class="w-fit xl:w-1/2 border-r-4 border-teal-800">
+            <img
+              src="./assets/men1.jpg"
+              alt=""
+              class="rounded rounded-full h-32 w-32 mx-auto outline outline-md outline-white hover:scale-105 transition-all delay-75 duration-900 ease-in"
+            />
+            <article class="text-center">
+              <h1 class="my-6 text-xl md:text-2xl text-gray-700 uppercase">
+                John
+              </h1>
+              <p class="w-4/5 mx-auto text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+                dolor sit amet.
+              </p>
+            </article>
+          </div>
+
+          <div class="w-fit xl:w-1/2">
+            <img
+              src="./assets/women1.jpg"
+              alt=""
+              class="rounded rounded-full h-32 w-32 mx-auto outline outline-md outline-white hover:scale-105 transition-all delay-75 duration-900 ease-in"
+            />
+            <article class="text-center">
+              <h1 class="my-6 text-xl md:text-2xl text-gray-700 uppercase">
+                sathya
+              </h1>
+              <p class="w-4/5 mx-auto text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+                dolor sit amet.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="flex justify-center mx-auto px-0 md:px-20 xl:px-64 mt-16">
+          <div class="w-fit xl:w-1/2 border-r-4 border-teal-800">
+            <img
+              src="./assets/men2.jpg"
+              alt=""
+              class="rounded rounded-full h-32 w-32 mx-auto outline outline-md outline-white hover:scale-105 transition-all delay-75 duration-900 ease-in"
+            />
+            <article class="text-center">
+              <h1 class="my-6 text-xl md:text-2xl text-gray-700 uppercase">
+                settu
+              </h1>
+              <p class="w-4/5 mx-auto text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+                dolor sit amet.
+              </p>
+            </article>
+          </div>
+
+          <div class="w-fit xl:w-1/2">
+            <img
+              src="./assets/women2.jpg"
+              alt=""
+              class="rounded rounded-full h-32 w-32 mx-auto outline outline-md outline-white hover:scale-105 transition-all delay-75 duration-900 ease-in"
+            />
+            <article class="text-center">
+              <h1 class="my-6 text-xl md:text-2xl text-gray-700 uppercase">
+                chinderlla
+              </h1>
+              <p class="w-4/5 mx-auto text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+                dolor sit amet.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="my-5 text-center">
+        <a href="#">&copy; 2024 Narayanan, inc. All rights reserved. </a>
+      </div>
+    </footer>
+  </body>
+</html>
